@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="flex justify-between">
             {/* DIV1 */}
           <div>
-            <h1 className="font-bold text-3xl font-serif ">AIRFLY</h1>
+            <h1 className="font-bold text-3xl">AIRFLY</h1>
           </div>
 
           {/* DIV2 */}
