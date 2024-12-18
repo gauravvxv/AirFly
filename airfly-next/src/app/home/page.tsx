@@ -2,7 +2,7 @@ import jordan from '../../../images/jordan-home.png'
 import Image from 'next/image'
 const Home = () => {
   return (
-    <section className='bg-[#f8ecde] relative min-h-screen'>
+    <section className='bg-[#f8ecde] relative h-[516px] overflow-hidden'>
 
         <div >
     <div>
@@ -39,19 +39,28 @@ const Home = () => {
     </div>
 
     <div>
+
+      <div className='absolute bottom-[100px] p-4 font-bold text-4xl'>
+        <p>UNWRAP</p>
+      </div>
+
+      <div>
 <Image
 src={jordan}
 alt='Jordan Picture'
 width={700}
 style={{
   position: 'absolute',
-  left: '120px',
-  bottom:'-140px',
+  left: '170px',
+  bottom:'-220px',
   zIndex: '99'
 }}
 />
+</div>
 
-
+<div className='absolute left-[900px] bottom-[100px] p-4 font-bold text-4xl' >
+<p>POSSIBILITIES</p>
+</div>
     </div>
 
 
