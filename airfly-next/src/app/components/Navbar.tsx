@@ -4,12 +4,12 @@ import { TbLogout } from "react-icons/tb";
 
 const Navbar = () => {
   return (
-    <div className=" p-4 bg-[#f8ecde]">
+    <div className="p-4 sticky top-0 z-50 bg-[#f8ecde]">
       <nav>
         <div className="flex justify-between">
             {/* DIV1 */}
           <div>
-            <h1 className="font-bold text-3xl">AIRFLY</h1>
+            <h1 className="font-bold italic text-3xl">AIRFLY</h1>
           </div>
 
           {/* DIV2 */}

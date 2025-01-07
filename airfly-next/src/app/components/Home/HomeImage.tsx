@@ -1,8 +1,13 @@
-import jordan from '../../../images/jordan-home.png'
+import jordan from '../../../../images/jordan-home.png'
 import Image from 'next/image'
-const Home = () => {
+import Home1 from './Gender'
+import ImageEffect from './ImageEffect'
+import Features from './Features'
+const HomeImage = () => {
   return (
-    <section className='bg-[#f8ecde] relative h-[516px] overflow-hidden'>
+    <>
+    
+    <section className='bg-[#f8ecde] relative h-[530px] overflow-hidden'>
 
         <div >
     <div>
@@ -13,7 +18,7 @@ const Home = () => {
         color: 'transparent', 
         position: 'absolute',
         left: '70px',
-        fontFamily: 'sans-serif',
+        // fontFamily: 'sans-serif',
         textAlign: 'center',
         top: '-40px',
         fontWeight: 'bolder'
@@ -26,7 +31,7 @@ const Home = () => {
     <div>
         <h1      
         style={{
-            fontSize: 'clamp(50px , 13vw , 100vw)',
+          fontSize: 'clamp(50px , 13vw , 100vw)',
             color: '#212529',
             zIndex: '1',
             position: 'absolute',
@@ -40,7 +45,7 @@ const Home = () => {
 
     <div>
 
-      <div className='absolute bottom-[100px] p-4 font-bold text-4xl'>
+      <div className='absolute bottom-[25px] p-4 font-bold text-4xl'>
         <p>UNWRAP</p>
       </div>
 
@@ -58,15 +63,22 @@ style={{
 />
 </div>
 
-<div className='absolute left-[900px] bottom-[100px] p-4 font-bold text-4xl' >
+<div className='absolute left-[900px] bottom-[25px] p-4 font-bold text-4xl' >
 <p>POSSIBILITIES</p>
 </div>
     </div>
-
-
         </div>
     </section>
+
+    <div>
+      <Home1/>
+    </div>
+
+<ImageEffect/>
+
+<Features/>
+    </>
   )
 }
 
-export default Home
+export default HomeImage
